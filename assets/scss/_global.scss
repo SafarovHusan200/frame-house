@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Qanelas"; /* Shrift nomi */
+  src: url("../fonts/qanelas/QanelasLight.otf") format("opentype"); /* OpenType format */
+}
+@font-face {
+  font-family: "SONGER Grotesque"; /* Shrift nomi */
+  src: url("../fonts/songer/SONGER™_G_Regular.otf") format("opentype"); /* OpenType format */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Qanelas", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+// blue color for interface
+.blue {
+  color: #6999cf;
+}
+
+.blue__btn {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    linear-gradient(0deg, #66a2d4 0%, #66a2d4 100%), #d9d9d9;
+  box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset,
+    -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+}
+
+.nav-tabs .nav-link.active {
+  background: #6999cf;
+}
+
+.calculate {
+  background: url("../images/calculate__bg.jpg");
+
+  .call__me {
+    color: #6999cf;
+  }
+}
