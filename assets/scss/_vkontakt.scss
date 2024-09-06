@@ -1,0 +1,50 @@
+.vkontakt {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30px;
+
+  background-image: url("../images/vkontakt__bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-bottom: 50px;
+
+  .left {
+    .section--title {
+      color: #171811;
+
+      /* H2 */
+      font-family: "SONGER Grotesque";
+      font-size: 76px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 86px; /* 113.158% */
+      text-transform: uppercase;
+
+      margin-bottom: 55px;
+    }
+
+    .btn {
+      width: 258px;
+      height: 90px;
+      border-radius: 100px;
+
+      color: #fff;
+      text-align: center;
+
+      font-size: 16.189px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 11.859px; /* 73.253% */
+      letter-spacing: 2.024px;
+      text-transform: uppercase;
+    }
+  }
+
+  .right {
+    img {
+      transform: translateY(-100px);
+    }
+  }
+}
