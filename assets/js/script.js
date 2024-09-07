@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectElement = document.getElementById("ideal__select");
   const techBtns = document.querySelectorAll("#techno__btn");
   const technoElements = document.querySelectorAll(".techno-el");
+  const menuOpenBtn = document.getElementById("menu__open__btn");
+  const closeBtn = document.getElementById("close__btn");
+  const navbar = document.getElementById("navbar");
+
+  menuOpenBtn.addEventListener("click", () => {
+    navbar.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    navbar.classList.remove("active");
+  });
+
+  document.addEventListener("scroll", () => {
+    navbar.classList.remove("active");
+  });
 
   techBtns.forEach((btn, i) => {
     btn.addEventListener("mouseenter", () => {

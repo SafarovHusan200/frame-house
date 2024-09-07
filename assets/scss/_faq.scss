@@ -53,8 +53,12 @@
           font-size: 34px;
           font-style: normal;
           font-weight: 400;
-          line-height: 90px; /* 264.706% */
+          line-height: 38px; /* 264.706% */
           text-transform: uppercase;
+          margin-bottom: 0;
+        }
+        span {
+          width: 2px;
         }
       }
       .accordion-button:not(.collapsed) {
@@ -85,6 +89,7 @@
         height: 2px;
         width: 1rem;
         background-color: var(--primary-text);
+        top: 50%;
       }
       .accordion-button.collapsed:after {
         content: "";
@@ -96,6 +101,7 @@
         width: 0.125rem;
         border-style: none;
         background-color: var(--primary-text);
+        top: 42%;
       }
 
       .faq-section .accordion-button h5 {

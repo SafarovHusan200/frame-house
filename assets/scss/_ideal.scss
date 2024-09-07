@@ -11,9 +11,26 @@
 
       margin-bottom: 69px;
 
+      @media (max-width: 1200px) {
+        width: 100%;
+        flex-direction: column;
+      }
+
       .left {
         position: relative;
         width: calc(60% - 50px);
+        @media (max-width: 1200px) {
+          width: 100%;
+          h2 {
+            width: calc(100% - 131px);
+          }
+        }
+        @media (max-width: 707px) {
+          width: 100%;
+          h2 {
+            width: calc(100% - 13px);
+          }
+        }
         h2 {
           color: #171811;
 
@@ -23,12 +40,24 @@
           font-weight: 400;
           line-height: 86px; /* 113.158% */
           text-transform: uppercase;
+
+          @media (max-width: 1200px) {
+            font-size: 60px;
+            line-height: normal;
+          }
+          @media (max-width: 676px) {
+            font-family: "SONGER Grotesque";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px; /* 116.667% */
+            text-transform: uppercase;
+          }
         }
 
         select {
           width: 131px;
           height: 46px;
-
           background-color: #ebebeb;
           border: none;
           padding: 10px;
@@ -37,6 +66,10 @@
           position: absolute;
           right: 15px;
           bottom: 30px;
+
+          @media (max-width: 676px) {
+            bottom: 10px;
+          }
         }
       }
 
@@ -46,7 +79,9 @@
         display: flex;
 
         position: relative;
-
+        @media (max-width: 1200px) {
+          width: 100%;
+        }
         .content {
           max-width: 350px;
           width: 100%;
@@ -63,9 +98,16 @@
           b {
             font-weight: 600;
           }
+
+          @media (max-width: 676px) {
+            max-width: 100%;
+          }
         }
 
         .photo {
+          @media (max-width: 676px) {
+            display: none;
+          }
           img {
             position: absolute;
             right: 0;

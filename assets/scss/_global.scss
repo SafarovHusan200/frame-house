@@ -23,6 +23,11 @@ body {
   font-family: "Qanelas", sans-serif;
 }
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -31,6 +36,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
 }
 
 button {
