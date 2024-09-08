@@ -27,6 +27,10 @@
           font-weight: 400;
           line-height: 20px; /* 153.846% */
           margin: 0;
+
+          @media (max-width: 1100px) {
+            display: none;
+          }
         }
       }
 
@@ -50,6 +54,10 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
+        @media (max-width: 900px) {
+          display: none;
+        }
+
         .phone {
           color: #171811;
           text-align: right;
@@ -105,7 +113,13 @@
       justify-content: space-between;
       align-items: center;
 
-      p {
+      @media (max-width: 1100px) {
+        flex-direction: column;
+        align-items: normal;
+        gap: 29px;
+      }
+
+      .year {
         margin: 0;
         color: #171811;
 
@@ -113,9 +127,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px; /* 125% */
-        span {
-          font-weight: 500;
-        }
       }
 
       .policy {
@@ -125,6 +136,47 @@
         line-height: 20px; /* 142.857% */
         text-decoration-line: underline;
         text-transform: lowercase;
+
+        @media (max-width: 1100px) {
+          display: none;
+        }
+      }
+
+      .footer__end {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        .links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          a {
+            width: 52px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            background: linear-gradient(
+                273deg,
+                rgba(255, 255, 255, 0) -3.08%,
+                rgba(255, 255, 255, 0.2) 37.65%,
+                rgba(255, 255, 255, 0.2) 53.88%,
+                rgba(255, 255, 255, 0) 99.19%
+              ),
+              #41b9f5;
+            box-shadow: 0px 3.972px 3.972px 0px rgba(255, 255, 255, 0.25) inset;
+
+            &:nth-child(2) {
+              background: linear-gradient(273deg, #0077ff, #2289ff, #0077ff);
+            }
+            &:nth-child(3) {
+              background-color: #5ce470;
+            }
+          }
+        }
       }
 
       .rights {
@@ -141,6 +193,10 @@
           font-style: normal;
           font-weight: 400;
           line-height: 20px; /* 125% */
+
+          span {
+            font-weight: 500;
+          }
         }
       }
     }

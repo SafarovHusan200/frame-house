@@ -12,6 +12,11 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
       .left {
         padding: 0;
         .descr {
@@ -21,6 +26,22 @@
           font-weight: 400;
           line-height: 48px;
           margin-bottom: 2px;
+
+          @media (max-width: 676px) {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+
+        .section--title {
+          @media (max-width: 676px) {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+          }
         }
       }
       .right {
@@ -31,16 +52,38 @@
         align-items: center;
         gap: 23px;
 
+        @media (max-width: 900px) {
+          width: 100%;
+          justify-content: flex-end;
+        }
+
         button {
           display: block;
           width: 124px;
           height: 80px;
           border-radius: 20px;
           background: #ebebeb;
+
+          @media (max-width: 676px) {
+            width: 68px;
+            height: 44px;
+
+            img {
+              width: 50%;
+            }
+          }
         }
         p {
           margin: 0;
           width: 180px;
+
+          @media (max-width: 676px) {
+            width: 200px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
         }
       }
     }
@@ -51,6 +94,10 @@
 
       display: flex;
       align-items: stretch;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
 
       main {
         width: 100%;
@@ -74,39 +121,55 @@
           line-height: 150%; /* 30px */
           letter-spacing: -0.4px;
 
-          background: linear-gradient(
-              273deg,
-              rgba(255, 255, 255, 0) -3.08%,
-              rgba(255, 255, 255, 0.2) 37.65%,
-              rgba(255, 255, 255, 0.2) 53.88%,
-              rgba(255, 255, 255, 0) 99.19%
-            ),
-            var(--BlueV-main, #6999cf);
-          box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09)
-              inset,
-            -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
-
           &.btn1 {
             top: 498px;
             left: 411px;
+            @media (max-width: 768px) {
+              top: 277px;
+              left: 214px;
+            }
           }
           &.btn2 {
             top: 339px;
             left: 233px;
+
+            @media (max-width: 768px) {
+              top: 208px;
+              left: 119px;
+            }
           }
           &.btn3 {
             top: 280px;
             left: 364px;
+
+            @media (max-width: 768px) {
+              top: 160px;
+              left: 184px;
+            }
           }
 
           &.btn4 {
             top: 392px;
             left: 494px;
+            @media (max-width: 768px) {
+              top: 190px;
+              left: 277px;
+            }
           }
 
           &.btn5 {
             top: 157px;
             left: 665px;
+            @media (max-width: 768px) {
+              top: 80px;
+              left: 362px;
+            }
+          }
+        }
+
+        .home {
+          @media (max-width: 768px) {
+            width: 575px;
           }
         }
       }
@@ -115,6 +178,11 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (max-width: 1200px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
 
         .techno-el {
           display: flex;
@@ -141,6 +209,11 @@
 
       margin-top: 35px;
 
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       .left {
         color: #171811;
         font-family: "SONGER Grotesque";
@@ -149,6 +222,12 @@
         font-weight: 400;
         line-height: 42px;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+          br {
+            display: none;
+          }
+        }
       }
 
       .right {

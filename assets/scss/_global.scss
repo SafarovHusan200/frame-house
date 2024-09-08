@@ -18,6 +18,17 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px gray;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6999cf;
+  border-radius: 10px;
+}
 
 body {
   font-family: "Qanelas", sans-serif;
@@ -155,6 +166,15 @@ ul li {
     }
   }
 }
+.tarif .container .tarif__table::before {
+  position: absolute;
+  content: "";
+  width: 304px;
+  height: 304px;
+  background-image: url("../images/tarif__aylana.png");
+  top: -120px;
+  left: 80px;
+}
 
 .container .slick-prev:before,
 .container .slick-next:before {
@@ -187,4 +207,17 @@ ul li {
   svg
   path:last-child {
   stroke: #6999cf;
+}
+
+.texnology .container .texnology__middle main .btn {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    #6999cf;
+  box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset,
+    -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
 }

@@ -3,6 +3,10 @@
   padding: 100px 0;
   margin-bottom: 100px;
 
+  @media (max-width: 676px) {
+    margin-bottom: 50px;
+  }
+
   .container {
     flex-direction: column;
 
@@ -13,8 +17,16 @@
       align-items: flex-end;
 
       margin-bottom: 80px;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
       .col {
         width: 50%;
+        @media (max-width: 1200px) {
+          width: 100%;
+        }
         .descr {
           color: #171811;
 
@@ -35,6 +47,13 @@
           font-weight: 400;
           line-height: 86px; /* 113.158% */
           text-transform: uppercase;
+
+          @media (max-width: 676px) {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+          }
         }
 
         .text_and_video {
@@ -48,6 +67,10 @@
           background: #fafafa;
           gap: 60px;
           padding: 0 10px;
+
+          @media (max-width: 1200px) {
+            margin-top: 50px;
+          }
 
           li {
             width: 45%;
@@ -89,8 +112,41 @@
       overflow: hidden;
 
       .slider {
-        width: 1170px;
+        max-width: 1170px;
+        margin: 90%;
         margin: auto;
+        padding-bottom: 25px;
+
+        position: relative;
+
+        .column {
+          position: relative;
+
+          .play__btn {
+            position: absolute;
+            background: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            img {
+              animation: plays 0.5s ease-in-out infinite alternate; /* Added duration and iteration count */
+              width: 224px !important;
+              @media (max-width: 676px) {
+                width: 154px !important;
+              }
+
+              @keyframes plays {
+                from {
+                  transform: scale(1);
+                }
+                to {
+                  transform: scale(1.1); /* Scale changes from 1 to 1.2 */
+                }
+              }
+            }
+          }
+        }
       }
 
       .slick-list {
@@ -112,9 +168,15 @@
       }
       .slick-next {
         right: 0px;
+        @media (max-width: 676px) {
+          display: none !important;
+        }
       }
       .slick-prev {
         left: 0px;
+        @media (max-width: 676px) {
+          display: none !important;
+        }
       }
 
       .slick-dots {

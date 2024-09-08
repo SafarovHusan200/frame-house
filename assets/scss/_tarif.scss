@@ -2,10 +2,10 @@
   width: 100%;
   padding: 0 0 50px 0;
 
-  background: url("../images/tarif__bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: url("../images/tarif__bg.png");
 
   .container {
     background-position: top right;
@@ -14,6 +14,19 @@
     flex-direction: column;
 
     align-items: flex-start;
+
+    @media (max-width: 1200px) {
+      background-position: 283px -35px;
+      background-size: 80%;
+    }
+    @media (max-width: 1200px) {
+      background-position: 283px 0px;
+      background-size: 80%;
+    }
+    @media (max-width: 676px) {
+      background-position: 182px 0px;
+      background-size: 800px;
+    }
 
     .section--title {
       color: #171811;
@@ -27,13 +40,32 @@
       line-height: 86px; /* 113.158% */
       text-transform: uppercase;
       width: 50%;
+
+      @media (max-width: 1200px) {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; /* 116.667% */
+      }
+
+      @media (max-width: 676px) {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px; /* 116.667% */
+      }
     }
 
-    table {
-      border-collapse: inherit;
+    .table__content {
+      width: 100vw;
+      height: calc(100% + 0px);
+      overflow: auto;
+      padding-top: 35px;
     }
     .tarif__table {
+      width: 1120px;
       margin-top: 50px;
+      border-collapse: inherit;
 
       //   background: url("../images/tarif__bg.png");
       background-position: left;
@@ -43,15 +75,7 @@
       border-spacing: 20px 0;
       position: relative;
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 304px;
-        height: 304px;
-        background-image: url("../images/tarif__aylana.png");
-        top: -123px;
-        left: 80px;
-      }
+      padding-bottom: 50px;
 
       thead {
         tr {
@@ -64,6 +88,11 @@
             line-height: 48px; /* 133.333% */
             text-transform: uppercase;
             text-align: center;
+
+            @media (max-width: 676px) {
+              font-size: 25px;
+              line-height: normal;
+            }
           }
         }
       }
@@ -130,6 +159,9 @@
                 font-weight: 600;
                 line-height: 48px; /* 133.333% */
                 text-transform: uppercase;
+
+                @media (max-width: 676px) {
+                }
               }
               .btn {
                 position: absolute;
