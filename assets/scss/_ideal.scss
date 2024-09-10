@@ -483,6 +483,7 @@
                       width: 100%;
                       display: flex;
                       justify-content: space-between;
+                      align-items: center;
 
                       .modal__price--name {
                         color: #171811;
@@ -513,6 +514,7 @@
                   .modal__btns {
                     display: flex;
                     justify-content: center;
+                    margin-top: 10px;
 
                     .btn {
                       width: 284px;

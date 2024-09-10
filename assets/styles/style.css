@@ -1009,6 +1009,7 @@ ul li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .ideal .container .tabs .tab-content__cards .card .card__project .modal__block .modal__row .right .modal__right-row .modal__price .modal__price--name {
   color: #171811;
@@ -1032,6 +1033,7 @@ ul li {
 .ideal .container .tabs .tab-content__cards .card .card__project .modal__block .modal__row .right .modal__btns {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 .ideal .container .tabs .tab-content__cards .card .card__project .modal__block .modal__row .right .modal__btns .btn {
   width: 284px;
