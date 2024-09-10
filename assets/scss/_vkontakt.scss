@@ -4,7 +4,7 @@
   padding: 30px 0;
   border-radius: 30px;
 
-  background-image: url("../images/vkontakt__bg.jpg");
+  background: url("../images/vkontakt__bg-line.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,10 +12,10 @@
   margin-bottom: 50px;
 
   @media (max-width: 1200px) {
-    margin-top: 350px;
+    margin-top: 250px;
   }
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   .container {
@@ -81,12 +81,18 @@
     img {
       transform: translateY(-100px);
       @media (max-width: 1200px) {
-        margin-top: -50px;
+        margin-top: 0px;
+        transform: translateY(-50px);
 
-        width: 100%;
+        width: 90%;
       }
       @media (max-width: 768px) {
         width: 60%;
+        margin-top: -100px;
+      }
+      @media (max-width: 810px) {
+        width: 75%;
+        margin-top: -100px;
       }
     }
   }

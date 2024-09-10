@@ -47,6 +47,10 @@
     .faq__content {
       width: 100%;
 
+      .accordion-item:first-child {
+        border-top: 1px solid #dee2e6 !important;
+      }
+
       .accordion-button {
         display: flex;
         // align-items: center;

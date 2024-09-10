@@ -57,14 +57,20 @@
       overflow: auto;
     }
     .news__cards {
-      width: 1140px;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: stretch;
       gap: 20px;
+
+      padding: 10px;
 
       .card {
         width: 375px;
+
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.396);
 
         .content {
           padding: 15px;

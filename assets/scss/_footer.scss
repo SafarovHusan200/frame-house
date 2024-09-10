@@ -118,6 +118,10 @@
         align-items: normal;
         gap: 29px;
       }
+      @media (max-width: 1100px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 
       .year {
         margin: 0;
@@ -147,33 +151,41 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+
+        @media (max-width: 900px) {
+          width: 100%;
+        }
         .links {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-          a {
-            width: 52px;
-            height: 34px;
+          display: none;
+          @media (max-width: 900px) {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 6px;
-            background: linear-gradient(
-                273deg,
-                rgba(255, 255, 255, 0) -3.08%,
-                rgba(255, 255, 255, 0.2) 37.65%,
-                rgba(255, 255, 255, 0.2) 53.88%,
-                rgba(255, 255, 255, 0) 99.19%
-              ),
-              #41b9f5;
-            box-shadow: 0px 3.972px 3.972px 0px rgba(255, 255, 255, 0.25) inset;
+            gap: 10px;
+            a {
+              width: 52px;
+              height: 34px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 6px;
+              background: linear-gradient(
+                  273deg,
+                  rgba(255, 255, 255, 0) -3.08%,
+                  rgba(255, 255, 255, 0.2) 37.65%,
+                  rgba(255, 255, 255, 0.2) 53.88%,
+                  rgba(255, 255, 255, 0) 99.19%
+                ),
+                #41b9f5;
+              box-shadow: 0px 3.972px 3.972px 0px rgba(255, 255, 255, 0.25)
+                inset;
 
-            &:nth-child(2) {
-              background: linear-gradient(273deg, #0077ff, #2289ff, #0077ff);
-            }
-            &:nth-child(3) {
-              background-color: #5ce470;
+              &:nth-child(2) {
+                background: linear-gradient(273deg, #0077ff, #2289ff, #0077ff);
+              }
+              &:nth-child(3) {
+                background-color: #5ce470;
+              }
             }
           }
         }

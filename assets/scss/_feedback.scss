@@ -150,12 +150,13 @@
       }
 
       .slick-list {
+        margin: 0 -25px;
         overflow: visible;
       }
 
       .slick-slide {
-        // padding: 20px;
-        opacity: 0.5;
+        margin: 0 25px;
+        opacity: 0.1;
         .slick-track {
           display: flex !important;
         }
@@ -182,14 +183,17 @@
       .slick-dots {
         bottom: 5px;
 
+        display: flex;
+        justify-content: center;
+
         li {
           width: 171px;
           height: 4px;
           border-radius: 2px;
-          background: var(--dark-gray, #ebebeb);
+          background: #ebebeb;
           &.slick-active {
             border-radius: 2px;
-            background: var(--BlueV-main, #6999cf);
+            background: #6999cf;
           }
 
           button {
@@ -227,16 +231,7 @@
         height: 74px;
 
         line-height: 1;
-        // background: linear-gradient(
-        //     273deg,
-        //     rgba(255, 255, 255, 0) -3.08%,
-        //     rgba(255, 255, 255, 0.2) 37.65%,
-        //     rgba(255, 255, 255, 0.2) 53.88%,
-        //     rgba(255, 255, 255, 0) 99.19%
-        //   ),
-        //   #6999cf;
-        // box-shadow: inset 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09),
-        //   inset -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12);
+
         position: relative;
 
         display: flex;
@@ -261,7 +256,12 @@
       }
 
       &.text__content {
-        display: none;
+        // display: none;
+        width: 100vw;
+        height: 0;
+
+        visibility: hidden;
+        transition: visibility 0.5s;
 
         .slider {
           padding: 30px 0;

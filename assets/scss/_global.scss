@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Qanelas"; /* Shrift nomi */
-  src: url("../fonts/qanelas/QanelasLight.otf") format("opentype"); /* OpenType format */
+  src: url("../fonts/Qanelas-SemiBold.ttf") format("truetype"); /* OpenType format */
 }
 @font-face {
   font-family: "SONGER Grotesque"; /* Shrift nomi */
@@ -66,6 +66,20 @@ ul li {
   list-style: none;
 }
 
+.overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 0.1;
+  background: #1d1d1d;
+  z-index: 2;
+  opacity: 0.1;
+  background: #1d1d1d;
+}
 //======== blue color for interface ===========
 .section--title {
   color: #171811;
