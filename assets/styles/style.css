@@ -841,6 +841,7 @@ ul li {
   width: 100%;
   position: relative;
   margin-bottom: 29px;
+  cursor: pointer;
 }
 .ideal .container .tabs .tab-content__cards .card .card__project .modal__block {
   max-width: 1172px;
