@@ -3,17 +3,18 @@
   min-height: 100vh;
   padding: 50px 0;
 
-  background: url("../images/hero__blue.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   &.hero__first {
     background: url("../images/hero__blue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &.hero__second {
     background: url("../images/hero__bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (max-width: 1200px) {
