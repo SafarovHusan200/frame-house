@@ -38,7 +38,6 @@
 
         .section--title {
           // width: 50%;
-          color: #171811;
 
           /* H2 */
           font-family: "SONGER Grotesque";
@@ -47,6 +46,14 @@
           font-weight: 400;
           line-height: 86px; /* 113.158% */
           text-transform: uppercase;
+
+          .feedback__title {
+            // background: linear-gradient(90deg, #f64545 0%, #171811 100%);
+            background: linear-gradient(to right, #5a1c14, #171811);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
 
           @media (max-width: 676px) {
             font-size: 48px;
@@ -166,6 +173,10 @@
         padding: 0;
         opacity: 1;
         // margin: 0 20px;
+      }
+      .slick-prev,
+      .slick-next {
+        top: 45%;
       }
       .slick-next {
         right: 0px;

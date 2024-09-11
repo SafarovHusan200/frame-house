@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableContent = document.querySelector(".table__content");
   const tarifScroll = document.querySelector(".tarif__scroll");
   const cardProject = document.querySelectorAll("#card__project");
-  const modalBlock = document.querySelectorAll("#modal__block");
+  const modalBlock = document.querySelectorAll(".modal__block__parent");
+  const closeModalBlock = document.querySelectorAll(".close__modal__block");
   const overlay = document.getElementById("overlay");
   const btnTableFull = document.getElementById("btn__table__full");
   const soya = document.getElementById("soya");
@@ -135,22 +136,44 @@ document.addEventListener("DOMContentLoaded", () => {
     text.classList.remove("active");
   });
 
-  $(".slider-for").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: ".slider-nav",
-  });
+  // $(".slider-for").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: true,
+  //   fade: true,
+  //   asNavFor: ".slider-nav",
+  // });
 
-  $(".slider-nav").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: ".slider-for",
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    variableWidth: false,
+  // $(".slider-nav").slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   asNavFor: ".slider-for",
+  //   dots: false,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  //   variableWidth: false,
+  // });
+
+  $(".slider-nav").each(function (index) {
+    var sliderFor = $(".slider-for").eq(index); // slider-nav bilan mos keladigan slider-for
+
+    $(this).slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: sliderFor,
+
+      centerMode: true,
+      focusOnSelect: true,
+      variableWidth: false,
+    });
+
+    sliderFor.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: $(this),
+
+      fade: true,
+    });
   });
 
   cardProject.forEach((cp, i) => {
@@ -170,14 +193,37 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "auto";
   });
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key == "Escape") {
+  function modalHiddenFunc() {
+    modalBlock.forEach((el) => {
+      el.classList.remove("active");
+    });
+
+    overlay.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  closeModalBlock.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      console.log(btn);
+      // modalBlock[i].classList.remove("active");
+      // console.log(modalBlock[i]);
+
       modalBlock.forEach((el) => {
         el.classList.remove("active");
       });
 
       overlay.style.display = "none";
       document.body.style.overflow = "auto";
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape") {
+      modalHiddenFunc();
     }
+  });
+
+  $(document).ready(function () {
+    $(".select").niceSelect();
   });
 });

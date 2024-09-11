@@ -57,6 +57,7 @@
       overflow: auto;
     }
     .news__cards {
+      min-width: 1146px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -81,10 +82,17 @@
               color: #6999cf;
               font-weight: 700;
             }
+            .heart {
+              color: rgba(255, 0, 0, 0.714);
+            }
           }
 
           p {
             font-size: 14px;
+            color: #171811;
+            .news__link {
+              color: #171811;
+            }
           }
 
           .link {

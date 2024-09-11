@@ -59,14 +59,10 @@
           }
         }
 
-        select {
+        .ideal__select {
           width: 131px;
           height: 46px;
-          background-color: #ebebeb;
-          border: none;
-          padding: 10px;
 
-          border-radius: 20px;
           position: absolute;
           right: 15px;
           bottom: 30px;
@@ -76,6 +72,32 @@
           }
           @media (max-width: 480px) {
             bottom: -45px;
+          }
+
+          .btn__icon {
+            position: absolute;
+            right: 18px;
+            top: 10px;
+            z-index: 5;
+          }
+
+          .select {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+            background-color: #ebebeb;
+            border: none;
+
+            border-radius: 20px;
+
+            outline: none;
+          }
+          .nice-select {
+            &::after {
+              display: none;
+            }
           }
         }
       }
@@ -170,6 +192,11 @@
         padding: 30px 51px;
 
         border: none;
+
+        // width: 283px;
+        height: 106px;
+
+        margin-top: -8px;
       }
       .nav-tabs .nav-item.show .nav-link,
       .nav-tabs .nav-link.active {
@@ -179,15 +206,13 @@
         // background: #6999cf;
         color: #fff;
         text-align: center;
-        font-family: Qanelas;
+
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 16px;
         letter-spacing: 2px;
         text-transform: uppercase;
-
-        margin-top: -8px;
 
         @media (max-width: 676px) {
           width: 235px;
@@ -278,6 +303,10 @@
                 font-weight: 600;
                 line-height: 24px; /* 66.667% */
                 opacity: 0.6;
+
+                sup {
+                  font-size: 24px;
+                }
               }
             }
           }
@@ -291,28 +320,45 @@
 
             // ================= Modal ====================
 
-            .modal__block {
-              max-width: 1172px;
+            .modal__block__parent {
+              max-width: 1220px;
               width: 100%;
-              height: 628px;
-              border-radius: 30px;
-              background: #fafafa;
+              overflow: auto;
+              max-height: 100vh;
 
-              padding: 41px 31px 0;
+              padding: 10px;
+
               position: fixed;
-              top: 50%;
+              top: -50%;
               left: 50%;
               transform: translate(-50%, -50%);
 
               z-index: 4;
-
               cursor: auto;
 
               visibility: hidden;
               opacity: 0;
+
               &.active {
+                top: 50%;
                 visibility: visible;
                 opacity: 1;
+              }
+            }
+            .modal__block {
+              max-width: 1172px;
+              width: 100%;
+              height: auto;
+              border-radius: 30px;
+              background: #fafafa;
+
+              padding: 41px 30px 31px 10px;
+
+              margin: 0 auto;
+
+              @media (max-width: 768px) {
+                padding: 41px 10px 31px 10px;
+                overflow: hidden;
               }
 
               .modal__title {
@@ -335,15 +381,28 @@
 
                 margin-top: 36px;
 
+                @media (max-width: 768px) {
+                  flex-direction: column;
+                  align-items: center;
+                }
+
                 .left {
                   // Slick
                   width: calc(50% - 30px);
+
+                  @media (max-width: 768px) {
+                    width: calc(100% - 30px);
+                  }
 
                   .slider-for {
                     width: 100%;
                     height: 300px;
                     margin-left: auto;
                     margin-right: auto;
+
+                    @media (max-width: 768px) {
+                      padding: 0 15px;
+                    }
 
                     .slick-dots {
                       display: flex;
@@ -392,7 +451,7 @@
                       background-image: url("../icons/prev.png");
                       background-position: center;
                       background-repeat: no-repeat;
-                      transform: translateX(-20%);
+                      transform: translateX(-10%);
                     }
 
                     .slick-next:before {
@@ -400,7 +459,7 @@
                       background-image: url("../icons/next.png");
                       background-position: center;
                       background-repeat: no-repeat;
-                      transform: translateX(-50%);
+                      transform: translateX(-60%);
                     }
                   }
 
@@ -437,6 +496,10 @@
                 .right {
                   width: calc(50% - 30px);
 
+                  @media (max-width: 768px) {
+                    width: calc(100% - 30px);
+                  }
+
                   .modal__right-row {
                     display: flex;
                     justify-content: space-between;
@@ -447,9 +510,15 @@
                       display: flex;
                       flex-direction: column;
                       justify-content: center;
-                      align-items: center;
+                      align-items: flex-start;
+
+                      flex-wrap: wrap;
 
                       margin-bottom: 10px;
+
+                      flex: 0 0 auto;
+                      width: 33%;
+
                       .parent {
                         color: #171811;
 
@@ -488,6 +557,10 @@
                       justify-content: space-between;
                       align-items: center;
 
+                      @media (max-width: 480px) {
+                        margin-bottom: 5px;
+                      }
+
                       .modal__price--name {
                         color: #171811;
 
@@ -495,6 +568,10 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 28px; /* 140% */
+                        @media (max-width: 480px) {
+                          font-size: 20px;
+                          line-height: normal;
+                        }
                       }
 
                       .modal__price--rubl {
@@ -503,12 +580,15 @@
                         gap: 18px;
 
                         span {
-                          font-family: Qanelas;
                           font-size: 30px;
                           font-style: normal;
                           font-weight: 600;
 
                           text-transform: uppercase;
+
+                          @media (max-width: 480px) {
+                            font-size: 20px;
+                          }
                         }
                       }
                     }

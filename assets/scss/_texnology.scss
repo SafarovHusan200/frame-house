@@ -112,6 +112,16 @@
 
         position: relative;
 
+        .home {
+          //   width: 100%;
+
+          position: relative;
+          z-index: 1;
+          @media (max-width: 768px) {
+            width: 575px;
+          }
+        }
+
         main {
           width: 100%;
 
@@ -123,6 +133,7 @@
             position: absolute;
             width: 50px;
             height: 50px;
+            z-index: 2;
             transition: 0.25s;
 
             border: 3px solid #fff;
@@ -182,10 +193,21 @@
             }
           }
 
-          .home {
-            width: 100%;
-            @media (max-width: 768px) {
-              width: 575px;
+          .home__aylana__matn {
+            position: absolute;
+            z-index: 0;
+            top: -185px;
+            left: 85px;
+
+            animation: aylana 15s linear infinite;
+
+            @keyframes aylana {
+              from {
+                transform: rotate(0);
+              }
+              to {
+                transform: rotate(-360deg);
+              }
             }
           }
         }
@@ -196,6 +218,7 @@
           gap: 20px;
 
           position: absolute;
+          z-index: 2;
           right: 15%;
           top: 100px;
           @media (max-width: 1200px) {
@@ -244,6 +267,8 @@
         }
       }
       .texnology__bottom {
+        position: relative;
+        z-index: 1;
         max-width: 1170px;
         width: 100%;
         display: flex;
