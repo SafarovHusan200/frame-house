@@ -306,6 +306,8 @@
 
               z-index: 4;
 
+              cursor: auto;
+
               visibility: hidden;
               opacity: 0;
               &.active {
@@ -415,6 +417,7 @@
                     .slick-current {
                       opacity: 1;
                     }
+
                     img {
                       display: block;
                       width: 100%;

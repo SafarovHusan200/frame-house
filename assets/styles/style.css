@@ -183,38 +183,24 @@ ul li {
   box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset, -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
 }
 
-.hero {
+.header {
+  position: absolute;
   width: 100%;
-  min-height: 100vh;
-  padding: 50px 0;
-  background: url("../images/hero__blue.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: 42px;
+  z-index: 1;
 }
-@media (max-width: 1200px) {
-  .hero {
-    padding: 30px 0;
-    background-position: bottom;
-  }
-}
-@media (max-width: 480px) {
-  .hero {
-    height: 830px;
-  }
-}
-.hero .header .container .logo {
+.header .container .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 27px;
 }
 @media (max-width: 676px) {
-  .hero .header .container .logo {
+  .header .container .logo {
     gap: 15px;
   }
 }
-.hero .header .container .logo p {
+.header .container .logo p {
   color: #171811;
   font-size: 13px;
   font-style: italic;
@@ -223,30 +209,30 @@ ul li {
   margin: 0;
 }
 @media (max-width: 676px) {
-  .hero .header .container .logo p {
+  .header .container .logo p {
     font-size: 16px;
     font-weight: 500;
   }
 }
-.hero .header .container .hr {
+.header .container .hr {
   height: 46px;
   width: 1px;
   background: rgba(39, 85, 150, 0.07);
 }
 @media (max-width: 1200px) {
-  .hero .header .container .hr {
+  .header .container .hr {
     display: none;
   }
 }
-.hero .header .container .navbar {
+.header .container .navbar {
   display: flex;
   gap: 30px;
 }
-.hero .header .container .navbar .close__btn {
+.header .container .navbar .close__btn {
   display: none;
 }
 @media (max-width: 1200px) {
-  .hero .header .container .navbar {
+  .header .container .navbar {
     z-index: 1;
     flex-direction: column;
     background-color: white;
@@ -260,27 +246,27 @@ ul li {
     right: -300px;
     justify-content: flex-start;
   }
-  .hero .header .container .navbar .btns {
+  .header .container .navbar .btns {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
-  .hero .header .container .navbar .btns button {
+  .header .container .navbar .btns button {
     width: 35px;
     height: 35px;
     background: none;
     display: block;
   }
-  .hero .header .container .navbar .btns button img {
+  .header .container .navbar .btns button img {
     width: 100%;
     height: 100%;
   }
-  .hero .header .container .navbar.active {
+  .header .container .navbar.active {
     right: 0;
     top: 0px;
   }
 }
-.hero .header .container .navbar a {
+.header .container .navbar a {
   color: #171811;
   font-family: "Qanelas", sans-serif;
   font-size: 16px;
@@ -289,28 +275,28 @@ ul li {
   line-height: 20px; /* 125% */
 }
 @media (max-width: 1200px) {
-  .hero .header .container .navbar a {
+  .header .container .navbar a {
     font-weight: 600;
     width: 100%;
     text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
   }
-  .hero .header .container .navbar a:hover {
+  .header .container .navbar a:hover {
     background-color: lavender;
   }
 }
-.hero .header .container .email {
+.header .container .email {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media (max-width: 1200px) {
-  .hero .header .container .email {
+  .header .container .email {
     display: none;
   }
 }
-.hero .header .container .email a {
+.header .container .email a {
   color: #171811;
   text-align: right;
   font-size: 16px;
@@ -319,7 +305,7 @@ ul li {
   line-height: 140%; /* 22.4px */
   letter-spacing: 0.32px;
 }
-.hero .header .container .email span {
+.header .container .email span {
   color: var(--Black, #171811);
   text-align: right;
   font-size: 13px;
@@ -327,28 +313,28 @@ ul li {
   font-weight: 300;
   line-height: 20px; /* 153.846% */
 }
-.hero .header .container .online {
+.header .container .online {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 @media (max-width: 676px) {
-  .hero .header .container .online {
+  .header .container .online {
     gap: 14px;
   }
 }
 @media (max-width: 480px) {
-  .hero .header .container .online {
+  .header .container .online {
     gap: 5px;
   }
 }
-.hero .header .container .online .col {
+.header .container .online .col {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media (max-width: 676px) {
-  .hero .header .container .online .col {
+  .header .container .online .col {
     color: #171811;
     text-align: right;
     font-size: 16px;
@@ -358,16 +344,16 @@ ul li {
   }
 }
 @media (max-width: 480px) {
-  .hero .header .container .online .col {
+  .header .container .online .col {
     display: none;
   }
 }
-.hero .header .container .online .col span {
+.header .container .online .col span {
   display: flex;
   align-items: center;
   gap: 7px;
 }
-.hero .header .container .online .whatsap {
+.header .container .online .whatsap {
   width: 54px;
   height: 38px;
   background-color: #5ce470;
@@ -377,12 +363,12 @@ ul li {
   align-items: center;
 }
 @media (max-width: 1200px) {
-  .hero .header .container .online .whatsap {
+  .header .container .online .whatsap {
     width: 70px;
     height: 45px;
   }
 }
-.hero .header .container .online .menu__open {
+.header .container .online .menu__open {
   display: none;
   width: 45px;
   height: 38px;
@@ -390,25 +376,25 @@ ul li {
   margin-left: 10px;
 }
 @media (max-width: 1200px) {
-  .hero .header .container .online .menu__open {
+  .header .container .online .menu__open {
     display: block;
   }
 }
-.hero .header .container .online .menu__open img {
+.header .container .online .menu__open img {
   width: 100%;
 }
-.hero .header .container .phone {
+.header .container .phone {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 5px;
 }
 @media (max-width: 1200px) {
-  .hero .header .container .phone {
+  .header .container .phone {
     display: none;
   }
 }
-.hero .header .container .phone a {
+.header .container .phone a {
   color: #171811;
   text-align: right;
   font-size: 16px;
@@ -417,7 +403,7 @@ ul li {
   line-height: 140%; /* 22.4px */
   letter-spacing: 0.32px;
 }
-.hero .header .container .phone span {
+.header .container .phone span {
   color: #6999cf;
   font-size: 10px;
   font-style: normal;
@@ -427,6 +413,33 @@ ul li {
   text-align: end;
   padding-bottom: 2px;
   border-bottom: 1px dashed #6999cf;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  background: url("../images/hero__blue.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero.hero__first {
+  background: url("../images/hero__blue.jpg");
+}
+.hero.hero__second {
+  background: url("../images/hero__bg.jpg");
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding: 30px 0;
+    background-position: bottom;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 830px;
+  }
 }
 .hero .container .hero__block {
   padding-top: 120px;
@@ -538,6 +551,10 @@ ul li {
   line-height: 11.859px; /* 73.253% */
   letter-spacing: 2.024px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 64px;
 }
 @media (max-width: 480px) {
@@ -855,6 +872,7 @@ ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
+  cursor: auto;
   visibility: hidden;
   opacity: 0;
 }
@@ -1623,9 +1641,44 @@ ul li {
   height: calc(100% + 0px);
   overflow: hidden;
   padding-top: 35px;
+  transition: 0.25s;
+  position: relative;
+  height: 900px;
 }
 .tarif .container .table__content.scrolled {
   overflow: auto;
+}
+.tarif .container .table__content .soya {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  max-width: 1080px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(358deg, #fff 1.98%, rgba(255, 255, 255, 0.96) 75.77%, rgba(255, 255, 255, 0) 97.81%);
+  opacity: 0.9;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tarif .container .table__content .soya .btn {
+  width: 248px;
+  height: 90px;
+  border-radius: 100px;
+  box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset, -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 16.189px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.859px; /* 73.253% */
+  letter-spacing: 2.024px;
+  text-transform: uppercase;
 }
 .tarif .container .tarif__table {
   width: 1120px;

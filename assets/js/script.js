@@ -14,9 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardProject = document.querySelectorAll("#card__project");
   const modalBlock = document.querySelectorAll("#modal__block");
   const overlay = document.getElementById("overlay");
+  const btnTableFull = document.getElementById("btn__table__full");
+  const soya = document.getElementById("soya");
 
   menuOpenBtn.addEventListener("click", () => {
     navbar.classList.add("active");
+  });
+
+  btnTableFull.addEventListener("click", () => {
+    tableContent.style.height = "auto";
+    soya.style.display = "none";
   });
 
   closeBtn.addEventListener("click", () => {
@@ -51,11 +58,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Hero slick
+  $(".hero__slider").slick({
+    infinite: true, // Cheksiz davom etishi uchun
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // fade: true,
+
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+  });
+
   // Initialize Slick Slider for video content
   $(".video__content .slider").slick({
     centerPadding: "-60px",
     slidesToShow: 1,
     dots: true,
+    infinite: true,
   });
   $(".chegirma .slider").slick({});
 
