@@ -35,7 +35,7 @@
 @font-face {
   font-family: "Qanelas";
   src: url("../fonts/Qanelas-SemiBold.ttf") format("truetype");
-  font-weight: 600; /* SemiBold weight */
+  font-weight: 700; /* SemiBold weight */
   font-style: normal;
 }
 @font-face {
@@ -2745,7 +2745,7 @@ ul li {
   height: 2px;
   width: 1rem;
   background-color: var(--primary-text);
-  top: 50px;
+  top: 35px;
 }
 .faq .container .faq__content .accordion-button.collapsed:after {
   content: "";
@@ -2757,7 +2757,7 @@ ul li {
   width: 0.125rem;
   border-style: none;
   background-color: var(--primary-text);
-  top: 43px;
+  top: 28px;
 }
 .faq .container .faq__content .faq-section .accordion-button h5 {
   /*   color: #7dbc9e; */
@@ -2766,6 +2766,12 @@ ul li {
 }
 .faq .container .faq__content .accordion-body {
   background-color: var(--secondary-text);
+}
+.faq .container .faq__content .accordion-body p {
+  font-weight: 300;
+}
+.faq .container .faq__content .accordion-body p b {
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .faq .container .faq__content {

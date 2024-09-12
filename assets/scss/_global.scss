@@ -38,7 +38,7 @@
 @font-face {
   font-family: "Qanelas";
   src: url("../fonts/Qanelas-SemiBold.ttf") format("truetype");
-  font-weight: 600; /* SemiBold weight */
+  font-weight: 700; /* SemiBold weight */
   font-style: normal;
 }
 
@@ -53,6 +53,8 @@
   box-sizing: border-box;
 
   transition: all 0.3s ease;
+
+  // font-family: "Qanelas", sans-serif;
 }
 
 html {

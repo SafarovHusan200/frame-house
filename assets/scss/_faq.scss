@@ -109,7 +109,7 @@
         height: 2px;
         width: 1rem;
         background-color: var(--primary-text);
-        top: 50px;
+        top: 35px;
       }
       .accordion-button.collapsed:after {
         content: "";
@@ -121,7 +121,7 @@
         width: 0.125rem;
         border-style: none;
         background-color: var(--primary-text);
-        top: 43px;
+        top: 28px;
       }
 
       .faq-section .accordion-button h5 {
@@ -131,6 +131,14 @@
       }
       .accordion-body {
         background-color: var(--secondary-text);
+
+        p {
+          font-weight: 300;
+
+          b {
+            font-weight: 500;
+          }
+        }
       }
       /* button:focus:not(:focus-visible) {
       outline: 0;
