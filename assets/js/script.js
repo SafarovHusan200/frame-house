@@ -153,28 +153,45 @@ document.addEventListener("DOMContentLoaded", () => {
   //   focusOnSelect: true,
   //   variableWidth: false,
   // });
+  document.querySelectorAll(".nav-link").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      console.log(btn);
 
-  $(".slider-nav").each(function (index) {
-    var sliderFor = $(".slider-for").eq(index); // slider-nav bilan mos keladigan slider-for
+      // Удаление slick слайдеров
+      $(".slider-nav").slick("unslick");
+      $(".slider-for").slick("unslick");
 
-    $(this).slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: sliderFor,
-
-      centerMode: true,
-      focusOnSelect: true,
-      variableWidth: false,
-    });
-
-    sliderFor.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: $(this),
-
-      fade: true,
+      // Реинициализация через небольшую задержку
+      setTimeout(() => {
+        initSlick();
+      }, 300);
     });
   });
+
+  function initSlick() {
+    $(".slider-nav").each(function (index) {
+      var sliderFor = $(".slider-for").eq(index); // slider-nav bilan mos keladigan slider-for
+
+      $(this).slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: sliderFor,
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: false,
+      });
+
+      sliderFor.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: $(this),
+        fade: true,
+      });
+    });
+  }
+
+  // Инициализация слайдера при загрузке страницы
+  initSlick();
 
   cardProject.forEach((cp, i) => {
     cp.addEventListener("click", () => {
