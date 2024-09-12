@@ -131,9 +131,11 @@
       }
       .accordion-body {
         background-color: var(--secondary-text);
-
+        font-size: 20px;
+        font-weight: 300;
         p {
           font-weight: 300;
+          font-size: 20px;
 
           b {
             font-weight: 500;

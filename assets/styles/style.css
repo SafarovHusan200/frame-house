@@ -2766,9 +2766,12 @@ ul li {
 }
 .faq .container .faq__content .accordion-body {
   background-color: var(--secondary-text);
+  font-size: 20px;
+  font-weight: 300;
 }
 .faq .container .faq__content .accordion-body p {
   font-weight: 300;
+  font-size: 20px;
 }
 .faq .container .faq__content .accordion-body p b {
   font-weight: 500;
