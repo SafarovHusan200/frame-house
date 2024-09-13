@@ -669,6 +669,7 @@ ul li {
 }
 .ideal .container {
   flex-direction: column;
+  padding: 0;
 }
 .ideal .container.ideal__container__v2 {
   padding: 0;
@@ -888,7 +889,7 @@ ul li {
   gap: 30px;
 }
 .ideal .container .tabs .tab-content__cards .card {
-  width: 555px;
+  width: 570px;
   height: 675px;
   border: none;
   border-radius: 30px !important;
