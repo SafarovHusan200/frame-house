@@ -54,13 +54,14 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 600;
-        line-height: 28px; /* 233.333% */
+        line-height: normal; /* 233.333% */
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0 16px 0 20px;
+
         gap: 8px;
+        opacity: 0.5;
       }
     }
 
@@ -101,7 +102,7 @@
       transition: 0.25s;
 
       &.scrolled {
-        overflow: auto;
+        overflow-x: scroll;
       }
 
       position: relative;

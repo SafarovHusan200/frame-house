@@ -78,7 +78,7 @@
             position: absolute;
             right: 18px;
             top: 10px;
-            z-index: 5;
+            z-index: 1;
           }
 
           .select {
@@ -95,6 +95,9 @@
             outline: none;
           }
           .nice-select {
+            .current {
+              opacity: 0.5;
+            }
             &::after {
               display: none;
             }
@@ -388,15 +391,16 @@
 
                 .left {
                   // Slick
-                  width: calc(50% - 30px);
+                  width: calc(56% - 30px);
 
                   @media (max-width: 768px) {
                     width: calc(100% - 30px);
+                    margin-bottom: 20px;
                   }
 
                   .slider-for {
                     width: 100%;
-                    height: 300px;
+                    height: 348px;
                     margin-left: auto;
                     margin-right: auto;
 
@@ -404,26 +408,53 @@
                       padding: 0 15px;
                     }
 
+                    .slick-list {
+                      height: 100%;
+                    }
+
+                    .slick-track {
+                      height: 100%;
+                    }
                     .slick-dots {
                       display: flex;
                       justify-content: center;
                       gap: 5px;
+                      bottom: 7px;
+
+                      li {
+                        width: 79px;
+                        button {
+                          &::before {
+                            content: "";
+                            width: 79px;
+                            height: 4px;
+                            border-radius: 2px;
+                            background: #6999cf;
+                          }
+                        }
+                      }
                     }
 
                     .slick-slide {
+                      width: 600px;
                       text-align: center;
-                    }
-                    img {
-                      display: block;
-                      width: 100%;
-                      height: 300px;
-                      object-fit: cover;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-position: center;
+                        object-fit: cover;
+                      }
                     }
 
                     .slick-prev,
                     .slick-next {
                       position: absolute;
                       z-index: 1;
+                      top: 44%;
                     }
 
                     .slick-prev:before,
@@ -494,7 +525,7 @@
                   }
                 }
                 .right {
-                  width: calc(50% - 30px);
+                  width: calc(44% - 30px);
 
                   @media (max-width: 768px) {
                     width: calc(100% - 30px);

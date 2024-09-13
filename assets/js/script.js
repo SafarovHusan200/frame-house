@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.add("active");
   });
 
+  // tarif scroll y
   btnTableFull.addEventListener("click", () => {
+    tableContent.classList.toggle("scrolled");
     tableContent.style.height = "auto";
     soya.style.display = "none";
   });
@@ -35,8 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.remove("active");
   });
 
+  // tarif scroll x
   tarifScroll.addEventListener("click", () => {
     tableContent.classList.toggle("scrolled");
+    tableContent.style.height = "auto";
+    soya.style.display = "none";
   });
 
   techBtns.forEach((btn, i) => {
@@ -136,27 +141,8 @@ document.addEventListener("DOMContentLoaded", () => {
     text.classList.remove("active");
   });
 
-  // $(".slider-for").slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: true,
-  //   fade: true,
-  //   asNavFor: ".slider-nav",
-  // });
-
-  // $(".slider-nav").slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   asNavFor: ".slider-for",
-  //   dots: false,
-  //   centerMode: true,
-  //   focusOnSelect: true,
-  //   variableWidth: false,
-  // });
   document.querySelectorAll(".nav-link").forEach((btn) => {
     btn.addEventListener("click", () => {
-      console.log(btn);
-
       // Удаление slick слайдеров
       $(".slider-nav").slick("unslick");
       $(".slider-for").slick("unslick");
@@ -186,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesToScroll: 1,
         asNavFor: $(this),
         fade: true,
+        dots: true,
       });
     });
   }
@@ -221,10 +208,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeModalBlock.forEach((btn, i) => {
     btn.addEventListener("click", () => {
-      console.log(btn);
-      // modalBlock[i].classList.remove("active");
-      // console.log(modalBlock[i]);
-
       modalBlock.forEach((el) => {
         el.classList.remove("active");
       });
