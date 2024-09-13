@@ -182,9 +182,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cardProject.forEach((cp, i) => {
     cp.addEventListener("click", () => {
-      modalBlock[i].classList.add("active");
-      document.body.style.overflow = "hidden";
-      overlay.style.display = "block";
+      let n = 0;
+
+      for (let j = 0; j < cardProject.length; j++) {
+        if (modalBlock[j].classList.contains("active")) {
+          n++;
+        }
+      }
+      console.log(n);
+
+      if (!n) {
+        modalBlock[i].classList.add("active");
+        document.body.style.overflow = "hidden";
+        overlay.style.display = "block";
+      }
     });
   });
 
