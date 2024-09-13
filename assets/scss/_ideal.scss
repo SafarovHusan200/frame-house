@@ -4,6 +4,10 @@
   .container {
     flex-direction: column;
 
+    &.ideal__container__v2 {
+      padding: 0;
+    }
+
     .row {
       display: flex;
       align-items: flex-end;
@@ -248,6 +252,25 @@
           padding: 40px 10px 33px 10px;
 
           &.card__v2 {
+            margin-top: 135px;
+            width: 370px;
+            height: 416px;
+            border-radius: 30px;
+            background: #fafafa;
+
+            position: relative;
+
+            .project_glavni__v2 {
+              width: 300px !important;
+              height: 173px;
+              border-radius: 30px;
+              border: 1px solid #ebebeb;
+              background: lightgray 0px 2.081px / 100% 97.595% no-repeat;
+
+              transform: translate(20px, -250px);
+            }
+          }
+          &.card__v3 {
             padding: 0;
             height: auto;
           }
@@ -272,6 +295,9 @@
             margin-bottom: 10px;
 
             &.card__title__v2 {
+              transform: translateY(90px);
+            }
+            &.card__title__v3 {
               display: none;
             }
 
@@ -287,7 +313,7 @@
 
             margin-bottom: 41px;
 
-            &.row__info__v2 {
+            &.row__info__v3 {
               display: none;
             }
 
@@ -325,6 +351,36 @@
                 }
               }
             }
+
+            &.row__info__v2 {
+              width: 310px;
+              margin: 0 auto;
+              border: 2px dashed #ebebeb;
+              padding: 22px 14px;
+
+              transform: translateY(100px);
+
+              .text {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+              }
+
+              .razmer {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+
+                sup {
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 24px;
+                }
+              }
+            }
           }
 
           .card__project {
@@ -334,7 +390,7 @@
 
             cursor: pointer;
 
-            &.card__project__v2 {
+            &.card__project__v3 {
               margin: 0;
             }
 
@@ -656,7 +712,7 @@
                         -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12)
                           inset;
 
-                      color: var(--White, #fff);
+                      color: #fff;
                       text-align: center;
                       font-size: 16.189px;
                       font-style: normal;
@@ -680,7 +736,7 @@
             .mobile__content {
               display: none;
 
-              &.mobile__content__v2 {
+              &.mobile__content__v3 {
                 width: 100%;
                 height: 100%;
                 padding: 30px;
@@ -855,7 +911,7 @@
               &.project_glavni_mobile {
                 display: none;
 
-                &.project_glavni_mobile__v2 {
+                &.project_glavni_mobile__v3 {
                   width: 100%;
                   display: block;
                 }
@@ -867,7 +923,7 @@
               &.project_glavni {
                 width: 100%;
 
-                &.project_glavni__v2 {
+                &.project_glavni__v3 {
                   display: none;
                 }
                 @media (max-width: 676px) {
@@ -878,8 +934,11 @@
                 position: absolute;
                 right: 20px;
                 top: 20px;
-
                 &.right_pro1__v2 {
+                  display: none;
+                }
+
+                &.right_pro1__v3 {
                   display: none;
                 }
 
@@ -896,6 +955,9 @@
                 &.right_pro2__v2 {
                   display: none;
                 }
+                &.right_pro2__v3 {
+                  display: none;
+                }
                 @media (max-width: 676px) {
                   display: none;
                 }
@@ -910,6 +972,14 @@
             gap: 30px;
 
             &.row_bottom__v2 {
+              transform: translateY(-90px);
+
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+
+            &.row_bottom__v3 {
               display: none;
             }
 
