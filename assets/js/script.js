@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("overlay");
   const btnTableFull = document.getElementById("btn__table__full");
   const soya = document.getElementById("soya");
+  const tarifTableFull = document.getElementById("tarif__table__full");
+  const tarifTableCol1 = document.getElementById("tarif__table__col1");
+  const tarifTableCol1Btn = document.getElementById("tarif__table__col1__btn");
+
+  tarifTableCol1Btn.addEventListener("click", () => {
+    tarifTableFull.style.display = "none";
+    tarifTableCol1.classList.add("active");
+  });
 
   menuOpenBtn.addEventListener("click", () => {
     navbar.classList.add("active");

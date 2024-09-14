@@ -32,9 +32,11 @@
       background-position: 283px -35px;
       background-size: 80%;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1000px) {
       background-position: 283px 0px;
       background-size: 80%;
+
+      padding-right: 0;
     }
     @media (max-width: 676px) {
       background-position: 182px 0px;
@@ -77,6 +79,7 @@
       text-transform: uppercase;
       width: 50%;
       margin-top: 47px;
+      margin-bottom: 0;
 
       @media (max-width: 1200px) {
         font-size: 64px;
@@ -95,7 +98,7 @@
     }
 
     .table__content {
-      width: 100vw;
+      width: 100%;
       height: calc(100% + 0px);
       overflow: hidden;
       padding-top: 35px;
@@ -118,7 +121,7 @@
         // border: 1px solid;
         max-width: 1080px;
         width: 100%;
-        height: 600px;
+        height: 150px;
         background: linear-gradient(
           358deg,
           #fff 1.98%,

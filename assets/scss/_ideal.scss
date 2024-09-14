@@ -3,11 +3,6 @@
 
   .container {
     flex-direction: column;
-    padding: 0;
-
-    &.ideal__container__v2 {
-      padding: 0;
-    }
 
     .row {
       display: flex;
@@ -439,6 +434,10 @@
                 visibility: visible;
                 opacity: 1;
               }
+
+              @media (max-width: 920px) {
+                max-width: 570px;
+              }
             }
             .modal__block {
               max-width: 1172px;
@@ -451,7 +450,7 @@
 
               margin: 0 auto;
 
-              @media (max-width: 768px) {
+              @media (max-width: 920px) {
                 padding: 41px 10px 31px 10px;
                 overflow: hidden;
               }
@@ -476,7 +475,7 @@
 
                 margin-top: 36px;
 
-                @media (max-width: 768px) {
+                @media (max-width: 920px) {
                   flex-direction: column;
                   align-items: center;
                 }
@@ -485,7 +484,7 @@
                   // Slick
                   width: calc(56% - 30px);
 
-                  @media (max-width: 768px) {
+                  @media (max-width: 920px) {
                     width: calc(100% - 30px);
                     margin-bottom: 20px;
                   }
@@ -501,10 +500,6 @@
                     border: 1px solid #ebebeb;
                     background: lightgray -66.297px -35.507px / 117.908% 118.21%
                       no-repeat;
-
-                    @media (max-width: 768px) {
-                      padding: 0 15px;
-                    }
 
                     .slick-list {
                       height: 100%;
@@ -582,7 +577,7 @@
                       background-image: url("../icons/prev.png");
                       background-position: center;
                       background-repeat: no-repeat;
-                      transform: translateX(-10%);
+                      transform: translateX(-13%);
                     }
 
                     .slick-next:before {
@@ -657,7 +652,7 @@
                 .right {
                   width: calc(44% - 30px);
 
-                  @media (max-width: 768px) {
+                  @media (max-width: 920px) {
                     width: calc(100% - 30px);
                   }
 

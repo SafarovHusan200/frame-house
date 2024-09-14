@@ -84,13 +84,14 @@ body {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: 1200px) {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -206,12 +207,90 @@ ul li {
   .container {
     background: url("../images/tarif__top-bg.png");
     .tarif__table {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 245px;
+        height: 245px;
+        background-image: url("../images/tarif__aylana.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        top: -90px;
+        left: 77px;
+      }
       thead {
         tr {
           th {
             &:nth-child(2) {
               height: 100px;
               width: 280px;
+              border-radius: 20px 20px 0px 0px;
+              background: #6999cf;
+              cursor: pointer;
+            }
+            &:nth-child(3) {
+              height: 100px;
+              width: 280px;
+              border-radius: 20px 20px 0px 0px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2) 0%,
+                  rgba(0, 0, 0, 0.2) 100%
+                ),
+                #6999cf;
+            }
+            &:nth-child(4) {
+              height: 100px;
+              width: 280px;
+              border-radius: 20px 20px 0px 0px;
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.4) 0%,
+                  rgba(0, 0, 0, 0.4) 100%
+                ),
+                #6999cf;
+            }
+          }
+        }
+      }
+    }
+
+    .tarif__table__col1 {
+      width: 100% !important;
+      display: none;
+
+      min-width: 500px;
+
+      &.active {
+        display: block;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 245px;
+        height: 245px;
+        background-image: url("../images/tarif__aylana.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        top: -90px;
+        left: 174px;
+
+        @media (max-width: 777px) {
+          left: 93px;
+        }
+        @media (max-width: 500px) {
+          left: 53px;
+        }
+      }
+      thead {
+        tr {
+          th {
+            &:nth-child(2) {
+              height: 100px;
+              width: auto;
               border-radius: 20px 20px 0px 0px;
               background: #6999cf;
             }
@@ -242,15 +321,6 @@ ul li {
       }
     }
   }
-}
-.tarif .container .tarif__table::before {
-  position: absolute;
-  content: "";
-  width: 304px;
-  height: 304px;
-  background-image: url("../images/tarif__aylana.png");
-  top: -120px;
-  left: 80px;
 }
 
 .container .slick-prev:before,
