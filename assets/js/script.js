@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: sliderFor,
-        centerMode: true,
+        // centerMode: true,
         focusOnSelect: true,
         variableWidth: false,
       });
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sliderFor.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: $(this),
+        // asNavFor: $(this),
         fade: true,
         dots: true,
       });
@@ -189,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
           n++;
         }
       }
-      console.log(n);
 
       if (!n) {
         modalBlock[i].classList.add("active");
