@@ -130,10 +130,13 @@
         left: -370px;
       }
       @media (max-width: 480px) {
-        height: 1300px;
+        height: 1100px;
+        left: -338px;
+        transform: scale(0.7);
+        margin-top: -193px;
       }
-      @media (max-width: 480px) {
-        height: 1400px;
+      @media (max-width: 416px) {
+        height: 1300px;
       }
 
       .home__block {
@@ -192,6 +195,7 @@
             font-weight: 600;
             line-height: 150%; /* 30px */
             letter-spacing: -0.4px;
+            padding: 0;
 
             &.btn1 {
               top: 498px;
@@ -308,7 +312,7 @@
           }
           @media (max-width: 768px) {
             left: 40%;
-            width: 100%;
+            width: 95%;
             flex-wrap: wrap;
           }
           @media (max-width: 676px) {
@@ -316,7 +320,10 @@
           }
 
           @media (max-width: 600px) {
-            left: 410px;
+            left: 390px;
+          }
+          @media (max-width: 480px) {
+            left: 463px;
           }
 
           .techno-el {
@@ -406,9 +413,27 @@
       @media (max-width: 768px) {
         flex-direction: column;
         gap: 10px;
+        left: 700px;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 720px) {
+        left: 654px;
+      }
+      @media (max-width: 676px) {
+        left: 731px;
+      }
+      @media (max-width: 630px) {
+        left: 694px;
+      }
+      @media (max-width: 605px) {
         left: 660px;
+      }
+      @media (max-width: 500px) {
+        left: 630px;
+      }
+
+      @media (max-width: 480px) {
+        bottom: -170px;
+        padding: 0;
       }
 
       .left {

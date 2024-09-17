@@ -25,19 +25,19 @@
     background-repeat: no-repeat;
     background-size: 77%;
     flex-direction: column;
-
     align-items: flex-start;
 
     @media (max-width: 1200px) {
       background-position: 283px -35px;
       background-size: 80%;
     }
+
     @media (max-width: 1000px) {
       background-position: 283px 0px;
       background-size: 80%;
-
       padding-right: 0;
     }
+
     @media (max-width: 676px) {
       background-position: 182px 0px;
       background-size: 800px;
@@ -45,7 +45,7 @@
 
     .tarif__scroll {
       display: none;
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         width: 327px;
         height: 46px;
         border-radius: 20px;
@@ -104,63 +104,16 @@
       padding-top: 35px;
       transition: 0.25s;
 
-      &.scrolled {
-        overflow-x: scroll;
-      }
+      overflow-x: scroll;
 
       position: relative;
-      height: 900px;
-
-      .soya {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        z-index: 2;
-
-        // border: 1px solid;
-        max-width: 1080px;
-        width: 100%;
-        height: 150px;
-        background: linear-gradient(
-          358deg,
-          #fff 1.98%,
-          rgba(255, 255, 255, 0.96) 75.77%,
-          rgba(255, 255, 255, 0) 97.81%
-        );
-        opacity: 0.9;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        .btn {
-          width: 248px;
-          height: 90px;
-          border-radius: 100px;
-
-          box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09)
-              inset,
-            -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
-
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-
-          color: #fff;
-          text-align: center;
-
-          font-size: 16.189px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 11.859px; /* 73.253% */
-          letter-spacing: 2.024px;
-          text-transform: uppercase;
-        }
-      }
+      height: 850px;
     }
+
     .tarif__table {
-      width: 1120px;
+      width: 100%;
+      min-width: 1000px;
+      margin: 0 auto;
       margin-top: 50px;
       border-collapse: inherit;
 
@@ -285,6 +238,53 @@
             }
           }
         }
+      }
+    }
+
+    .soya {
+      position: absolute;
+      bottom: 47px;
+      left: 0;
+
+      z-index: 2;
+
+      // border: 1px solid;
+      max-width: 1080px;
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(
+        358deg,
+        #fff 1.98%,
+        rgba(255, 255, 255, 0.96) 75.77%,
+        rgba(255, 255, 255, 0) 97.81%
+      );
+      opacity: 0.9;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .btn {
+        width: 248px;
+        height: 90px;
+        border-radius: 100px;
+
+        box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset,
+          -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: #fff;
+        text-align: center;
+
+        font-size: 16.189px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11.859px; /* 73.253% */
+        letter-spacing: 2.024px;
+        text-transform: uppercase;
       }
     }
   }

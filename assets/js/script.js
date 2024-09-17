@@ -123,7 +123,22 @@ document.addEventListener("DOMContentLoaded", () => {
   $(".projects__slider .slider").slick({
     centerPadding: "60px",
     slidesToShow: 3,
-    // dots: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 768, // For smaller screens
+    //     settings: {
+    //       slidesToShow: 1, // Show 1 slide on small screens
+    //       centerPadding: "40px",
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024, // For medium screens
+    //     settings: {
+    //       slidesToShow: 2, // Show 2 slides on medium screens
+    //       centerPadding: "50px",
+    //     },
+    //   },
+    // ],
   });
 
   // Initialize Fancybox

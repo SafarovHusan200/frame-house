@@ -61,7 +61,7 @@
           line-height: normal;
         }
         @media (max-width: 480px) {
-          font-size: 46px;
+          font-size: 44px;
           line-height: normal;
         }
 
@@ -75,6 +75,10 @@
             left: 50%;
 
             transform: translate(-50%, -50%);
+
+            @media (max-width: 480px) {
+              width: 16px;
+            }
           }
         }
       }
@@ -156,8 +160,10 @@
         margin-bottom: 64px;
 
         @media (max-width: 480px) {
+          height: 80px;
           font-size: 14px;
           line-height: normal;
+          padding: 0 16px;
         }
       }
 

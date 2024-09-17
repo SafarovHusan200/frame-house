@@ -32,6 +32,9 @@
 
         height: auto;
       }
+      @media (max-width: 768px) {
+        padding: 20px;
+      }
 
       .contact--title {
         color: #171811;
@@ -136,6 +139,11 @@
         line-height: 11.859px; /* 73.253% */
         letter-spacing: 2.024px;
         text-transform: uppercase;
+
+        @media (max-width: 480px) {
+          width: 260px;
+          height: 77px;
+        }
       }
     }
   }
