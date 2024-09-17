@@ -1892,10 +1892,10 @@ ul li {
   display: none;
 }
 .ideal .container .tabs .tab-content__cards .card__v2 .row_bottom__v2 {
-  transform: translateY(40px);
+  transform: translateY(-95px);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 @media (max-width: 676px) {
   .ideal .container .tabs .tab-content__cards .card__v2 .row_bottom__v2 {

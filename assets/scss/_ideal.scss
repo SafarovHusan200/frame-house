@@ -1283,11 +1283,11 @@
           }
 
           .row_bottom__v2 {
-            transform: translateY(40px);
+            transform: translateY(-95px);
 
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
 
             @media (max-width: 676px) {
               transform: translateY(-46px);
