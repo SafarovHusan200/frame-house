@@ -168,6 +168,32 @@ ul li {
   box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset, -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
 }
 
+.header .phone span {
+  color: #6999cf;
+  border-bottom: 1px dashed #6999cf;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.hero.hero__first {
+  background: url("../images/hero__blue.jpg");
+}
+
+.ideal .modal__block .slider-for li button::before {
+  background: #6999cf;
+}
+
+.news .date .sana {
+  color: #6999cf;
+}
+
+.solution .solution__card--img {
+  background: linear-gradient(273deg, rgba(255, 255, 255, 0) -3.08%, rgba(255, 255, 255, 0.2) 37.65%, rgba(255, 255, 255, 0.2) 53.88%, rgba(255, 255, 255, 0) 99.19%), #6999cf;
+}
+
 .nav-tabs .nav-link.active {
   background: #6999cf;
 }
@@ -292,9 +318,25 @@ ul li {
   stroke: #6999cf;
 }
 
+.feedback .text_and_video li.active {
+  background: #6999cf !important;
+}
+
+.feedback .slick-dots li.slick-active {
+  background: #6999cf !important;
+}
+
 .texnology .container .texnology__middle main .btn {
   background: linear-gradient(273deg, rgba(255, 255, 255, 0) -3.08%, rgba(255, 255, 255, 0.2) 37.65%, rgba(255, 255, 255, 0.2) 53.88%, rgba(255, 255, 255, 0) 99.19%), #6999cf;
   box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset, -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+}
+
+.faq .faq__content .number {
+  color: #6999cf !important;
+}
+
+.chegirma .white__btn {
+  color: #6999cf;
 }
 
 .header {
@@ -572,7 +614,6 @@ ul li {
   letter-spacing: 0.32px;
 }
 .header .container .phone span {
-  color: #6999cf;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -580,7 +621,6 @@ ul li {
   text-transform: uppercase;
   text-align: end;
   padding-bottom: 2px;
-  border-bottom: 1px dashed #6999cf;
 }
 
 .hero {
@@ -589,7 +629,6 @@ ul li {
   padding: 50px 0;
 }
 .hero.hero__first {
-  background: url("../images/hero__blue.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1208,7 +1247,6 @@ ul li {
   width: 79px;
   height: 4px;
   border-radius: 2px;
-  background: #6999cf;
 }
 .ideal .container .tabs .tab-content__cards .card .card__project .modal__block .modal__row .left .slider-for .slick-slide {
   width: 600px;
@@ -2214,7 +2252,6 @@ ul li {
   margin-bottom: 30px;
   -o-object-fit: contain;
      object-fit: contain;
-  background: linear-gradient(273deg, rgba(255, 255, 255, 0) -3.08%, rgba(255, 255, 255, 0.2) 37.65%, rgba(255, 255, 255, 0.2) 53.88%, rgba(255, 255, 255, 0) 99.19%), #6999cf;
   background-image: url("../images/solution__card_bg.png");
   background-size: cover;
   background-position: center;
@@ -2476,9 +2513,9 @@ ul li {
 .tarif .container .soya {
   position: absolute;
   bottom: 47px;
-  left: 0;
+  margin: 0 auto;
   z-index: 2;
-  max-width: 1080px;
+  max-width: 1130px;
   width: 100%;
   height: 150px;
   background: linear-gradient(358deg, #fff 1.98%, rgba(255, 255, 255, 0.96) 75.77%, rgba(255, 255, 255, 0) 97.81%);
@@ -2608,7 +2645,6 @@ ul li {
   width: 259px;
   height: 106px;
   border-radius: 61px;
-  background: #6999cf;
   color: #fff;
   text-align: center;
 }
@@ -2632,22 +2668,35 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 114px;
+  height: 114px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0.19) 100%), #6999cf;
+  box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset, -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.feedback .container .slick__corosel .slider .column .play__btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateY(-5px);
+  border-radius: 50%;
+  background-color: #6999cf;
 }
 .feedback .container .slick__corosel .slider .column .play__btn img {
   animation: plays 0.5s ease-in-out infinite alternate; /* Added duration and iteration count */
-  width: 224px !important;
-}
-@media (max-width: 676px) {
-  .feedback .container .slick__corosel .slider .column .play__btn img {
-    width: 154px !important;
-  }
 }
 @keyframes plays {
   from {
-    transform: scale(1);
+    transform: scale(1) translateY(-5px);
   }
   to {
-    transform: scale(1.1); /* Scale changes from 1 to 1.2 */
+    transform: scale(1.1) translateY(-5px); /* Scale changes from 1 to 1.2 */
   }
 }
 .feedback .container .slick__corosel .slick-list {
@@ -2710,7 +2759,6 @@ ul li {
 }
 .feedback .container .slick__corosel .slick-dots li.slick-active {
   border-radius: 2px;
-  background: #6999cf;
 }
 .feedback .container .slick__corosel .slick-dots li button {
   display: none;
@@ -2718,10 +2766,6 @@ ul li {
 .feedback .container .slick__corosel .slider .column {
   text-align: center;
   width: 1170px;
-}
-.feedback .container .slick__corosel .slider .column img {
-  width: 100%;
-  height: auto;
 }
 .feedback .container .slick__corosel .slick-prev {
   z-index: 1;
@@ -2999,7 +3043,6 @@ ul li {
   margin-top: 15px;
   background-color: #fff;
   transform: rotate(-2.64deg);
-  color: #6999cf;
   text-align: center;
   /* H2 */
   font-family: "SONGER Grotesque";
@@ -3100,7 +3143,6 @@ ul li {
   padding: 15px 0;
 }
 .news .container .news__cards .card .content .date .sana {
-  color: #6999cf;
   font-weight: 700;
 }
 .news .container .news__cards .card .content .date .heart {
@@ -3196,11 +3238,10 @@ ul li {
   width: 171px;
   height: 4px;
   border-radius: 2px;
-  background: var(--dark-gray, #ebebeb);
+  background: #ebebeb;
 }
 .photosproject .container .projects__slider .slick-dots li.slick-active {
   border-radius: 2px;
-  background: var(--BlueV-main, #6999cf);
 }
 .photosproject .container .projects__slider .slick-dots li button {
   display: none;
@@ -3359,7 +3400,6 @@ ul li {
 }
 .faq .container .faq__content .accordion-button:not(.collapsed) .number {
   opacity: 1;
-  color: #6999cf;
 }
 .faq .container .faq__content .accordion-button:not(.collapsed)::after {
   background-image: none;

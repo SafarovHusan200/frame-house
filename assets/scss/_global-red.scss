@@ -1,0 +1,240 @@
+.blue {
+  color: #da4042;
+}
+
+.blue__btn {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    linear-gradient(0deg, #da4042 0%, #da4042 100%), #d9d9d9;
+}
+
+.header .phone span {
+  color: #da4042;
+  border-bottom: 1px dashed #da4042;
+}
+
+.hero {
+  &.hero__first {
+    background: url("../images/hero__red.jpg");
+  }
+}
+
+.ideal .modal__block .slider-for li {
+  button {
+    &::before {
+      background: #da4042;
+    }
+  }
+}
+
+.news .date {
+  .sana {
+    color: #da4042;
+  }
+}
+
+.solution .solution__card--img {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    #da4042;
+}
+
+.nav-tabs .nav-link.active {
+  background: #da4042;
+}
+
+.calculate {
+  background: url("../images/calculate__bg-red.jpg");
+
+  .call__me {
+    color: #da4042;
+  }
+}
+
+.blue_opacity::after {
+  background: #da4042;
+}
+
+.tarif {
+  .container {
+    background: url("../images/tarif__top-bg-red.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 77%;
+    .tarif__table {
+      &::before {
+        background-image: url("../images/tarif__aylana-red.png");
+      }
+      thead {
+        tr {
+          th {
+            &:nth-child(2) {
+              background: #da4042;
+            }
+            &:nth-child(3) {
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2) 0%,
+                  rgba(0, 0, 0, 0.2) 100%
+                ),
+                #da4042;
+            }
+            &:nth-child(4) {
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.4) 0%,
+                  rgba(0, 0, 0, 0.4) 100%
+                ),
+                #da4042;
+            }
+          }
+        }
+      }
+    }
+
+    .tarif__table__col1 {
+      &::before {
+        background-image: url("../images/tarif__aylana-red.png");
+      }
+      thead {
+        tr {
+          th {
+            &:nth-child(2) {
+              background: #da4042;
+            }
+            &:nth-child(3) {
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.2) 0%,
+                  rgba(0, 0, 0, 0.2) 100%
+                ),
+                #da4042;
+            }
+            &:nth-child(4) {
+              background: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.4) 0%,
+                  rgba(0, 0, 0, 0.4) 100%
+                ),
+                #da4042;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container .slick-prev:before,
+.container .slick-next:before {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    #da4042;
+  box-shadow: inset 3.773px 4.312px 4.312px rgba(255, 255, 255, 0.09),
+    inset -2.695px -1.078px 4.312px rgba(255, 255, 255, 0.12);
+}
+
+.feedback
+  .container
+  .slick__corosel.text__content
+  .content
+  .row
+  svg
+  path:first-child {
+  fill: #da4042;
+}
+.feedback
+  .container
+  .slick__corosel.text__content
+  .content
+  .row
+  svg
+  path:last-child {
+  stroke: #da4042;
+}
+
+.feedback .text_and_video li.active {
+  background: #da4042 !important;
+}
+.feedback .slick-dots li {
+  &.slick-active {
+    background: #da4042 !important;
+  }
+}
+
+.texnology .container .texnology__middle main .btn {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    #da4042;
+}
+
+.faq {
+  .faq__content .number {
+    color: #da4042 !important;
+  }
+}
+
+.chegirma {
+  .white__btn {
+    color: #da4042;
+  }
+
+  .slides.slide1 {
+    background: url("../images/chegirma__bg--line-red.png");
+  }
+  .slides.slide2 {
+    background: url("../images/chegirma__bg--line-red.png");
+  }
+}
+
+.ideal
+  .container
+  .tabs
+  .tab-content__cards
+  .card
+  .card__project
+  .modal__block
+  .modal__row
+  .right
+  .modal__right-row
+  .modal__price
+  .modal__price--rubl
+  svg
+  path {
+  stroke: #da4042 !important;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feedback .slick__corosel .play__btn {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.19) 0%,
+      rgba(0, 0, 0, 0.19) 100%
+    ),
+    #da4042 !important;
+  &::before {
+    background-color: #da4042 !important;
+  }
+}

@@ -184,6 +184,46 @@ ul li {
     -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
 }
 
+.header .phone span {
+  color: #6999cf;
+  border-bottom: 1px dashed #6999cf;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+
+  &.hero__first {
+    background: url("../images/hero__blue.jpg");
+  }
+}
+
+.ideal .modal__block .slider-for li {
+  button {
+    &::before {
+      background: #6999cf;
+    }
+  }
+}
+
+.news .date {
+  .sana {
+    color: #6999cf;
+  }
+}
+
+.solution .solution__card--img {
+  background: linear-gradient(
+      273deg,
+      rgba(255, 255, 255, 0) -3.08%,
+      rgba(255, 255, 255, 0.2) 37.65%,
+      rgba(255, 255, 255, 0.2) 53.88%,
+      rgba(255, 255, 255, 0) 99.19%
+    ),
+    #6999cf;
+}
+
 .nav-tabs .nav-link.active {
   background: #6999cf;
 }
@@ -366,6 +406,15 @@ ul li {
   stroke: #6999cf;
 }
 
+.feedback .text_and_video li.active {
+  background: #6999cf !important;
+}
+.feedback .slick-dots li {
+  &.slick-active {
+    background: #6999cf !important;
+  }
+}
+
 .texnology .container .texnology__middle main .btn {
   background: linear-gradient(
       273deg,
@@ -377,4 +426,16 @@ ul li {
     #6999cf;
   box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09) inset,
     -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+}
+
+.faq {
+  .faq__content .number {
+    color: #6999cf !important;
+  }
+}
+
+.chegirma {
+  .white__btn {
+    color: #6999cf;
+  }
 }

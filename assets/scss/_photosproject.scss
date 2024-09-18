@@ -86,10 +86,9 @@
           width: 171px;
           height: 4px;
           border-radius: 2px;
-          background: var(--dark-gray, #ebebeb);
+          background: #ebebeb;
           &.slick-active {
             border-radius: 2px;
-            background: var(--BlueV-main, #6999cf);
           }
 
           button {

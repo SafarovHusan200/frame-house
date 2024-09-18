@@ -107,7 +107,6 @@
               height: 106px;
 
               border-radius: 61px;
-              background: #6999cf;
 
               color: #fff;
               text-align: center;
@@ -138,20 +137,45 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 114px;
+            height: 114px;
+            background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.19) 0%,
+                rgba(0, 0, 0, 0.19) 100%
+              ),
+              #6999cf;
+            box-shadow: 3.773px 4.312px 4.312px 0px rgba(255, 255, 255, 0.09)
+                inset,
+              -2.695px -1.078px 4.312px 0px rgba(255, 255, 255, 0.12) inset;
+
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 0;
+
+              transform: translateY(-5px);
+              border-radius: 50%;
+              background-color: #6999cf;
+            }
 
             img {
               animation: plays 0.5s ease-in-out infinite alternate; /* Added duration and iteration count */
-              width: 224px !important;
-              @media (max-width: 676px) {
-                width: 154px !important;
-              }
 
               @keyframes plays {
                 from {
-                  transform: scale(1);
+                  transform: scale(1) translateY(-5px);
                 }
                 to {
-                  transform: scale(1.1); /* Scale changes from 1 to 1.2 */
+                  transform: scale(1.1) translateY(-5px); /* Scale changes from 1 to 1.2 */
                 }
               }
             }
@@ -214,7 +238,6 @@
           background: #ebebeb;
           &.slick-active {
             border-radius: 2px;
-            background: #6999cf;
           }
 
           button {
@@ -226,11 +249,6 @@
       .slider .column {
         text-align: center;
         width: 1170px;
-      }
-
-      .slider .column img {
-        width: 100%;
-        height: auto;
       }
 
       .slick-prev {
